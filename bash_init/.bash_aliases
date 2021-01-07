@@ -13,6 +13,11 @@ alias d=’pwd’
 alias t=’time’
 alias k='kill'
 alias null=’/dev/null’
+alias cg=’chmod -R g+rwx’
+
+# Scripting
+alias py='python3'
+alias Rs='Rscript'
 
 # fast navigation
 alias home='cd ~'
