@@ -1,3 +1,4 @@
+#!/bin/sh
 # Check available space on a partition (arg1), and if it is greater than X% (arg2), send an email to the server admin (arg3) 
 
 part=$1 # Must exactly match column 1 of the df output. E.g. /dev/mapper/vg01-lv.var
