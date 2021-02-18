@@ -6,14 +6,14 @@ alias la='ls -Ah'
 alias l='ls -althr'
 
 # commands
-alias q=’exit’
-alias c=’clear’
-alias h=’history’
-alias d=’pwd’
-alias t=’time’
+alias q='exit'
+alias c='clear'
+alias h='history'
+alias d='pwd'
+alias t='time'
 alias k='kill'
-alias null=’/dev/null’
-alias cg=’chmod -R g+rwx’
+alias null='/dev/null'
+alias cg='chmod -R g+rwx'
 
 # Scripting
 alias py='python3'
@@ -25,10 +25,12 @@ alias root='cd /'
 alias dtop='cd ~/Desktop'
 
 # git commands
-alias g=’git’
-alias gs=’git status’
-alias ga=’git add’
-alias com=’git commit -m’
-alias clone=’git clone’
-alias sth=’git stash’
-alias gl=’git log’
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias com='git commit -m'
+alias clone='git clone'
+alias sth='git stash'
+alias gl='git log'
+alias gpl='git log --graph --full-history --all --color \
+        --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
