@@ -101,6 +101,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Alias definitions for private aliases that are too hot for github.
+if [ -f ~/.bash_private_aliases ]; then
+    . ~/.bash_private_aliases
+fi
+
 # Function definitions.
 # Source separate file of bash functions. 
 
@@ -118,3 +123,15 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+####################################################
+##### My customizations below ######################
+export PATH="$PATH:/opt/mssql-tools/bin"
+export PATH=${PATH}:/home/belmjud/edirect
+
+#export DOCKER_HOST=tcp://localhost:2375 # Commented out as per https://stackoverflow.com/questions/64710480/docker-client-under-wsl2-doesnt-work-without-sudo
+DOCKER_DISTRO="Ubuntu"
+DOCKER_LOG_DIR=$HOME/docker_logs
+mkdir -pm o=,ug=rwx "$DOCKER_LOG_DIR"
+/mnt/c/Windows/System32/wsl.exe -d $DOCKER_DISTRO sh -c "nohup sudo -b dockerd < /dev/null > $DOCKER_LOG_DIR/dockerd.log 2>&1"
+
