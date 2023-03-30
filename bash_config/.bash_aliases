@@ -19,10 +19,15 @@ alias cg='chmod -R g+rwx'
 # Scripting
 alias py='python3'
 alias Rs='Rscript'
+alias v='vim'
+
+# fast grepping
+alias gir='grep -ir'
 
 # fast navigation
 alias cdh='cd /mnt/c/Users/judson.x.belmont'
 alias cdc='cd /mnt/c/Users/judson.x.belmont/Documents/Code'
+alias cdiq='cd /mnt/c/Users/judson.x.belmont/Documents/Code/iqdb'
 alias home='cd ~'
 alias root='cd /'
 alias dtop='cd ~/Desktop'
@@ -63,3 +68,8 @@ alias rmtsvnull='sed -i "s/\tNULL\t/\t\t/g"'
 
 # Bed wrangling
 alias bedsort='sort -V -k1,1 -k2,2n -k3,3n'
+alias rmchr='sed "s/^chr//g"'
+
+# Copy & paste shortcuts
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
