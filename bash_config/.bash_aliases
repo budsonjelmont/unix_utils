@@ -73,3 +73,6 @@ alias rmchr='sed "s/^chr//g"'
 # Copy & paste shortcuts
 alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
+
+# Start Timidity
+alias tmd='timidity -iA -Os'
