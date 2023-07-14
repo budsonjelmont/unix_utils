@@ -60,6 +60,7 @@ alias dclsa='docker container ls -a'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 alias dcs='docker container start'
+alias testdig='rsync -avn . /dev/shm --exclude-from .dockerignore' # neat trick from https://stackoverflow.com/questions/38946683/how-to-test-dockerignore-file
 
 # Text wrangling aliases 
 alias rmbom='sed -i "1s/^\xEF\xBB\xBF//"'
