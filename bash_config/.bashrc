@@ -133,7 +133,7 @@ fi
 ####################################################
 ##### My customizations below ######################
 export PATH="$PATH:/opt/mssql-tools/bin"
-export PATH=${PATH}:/home/belmjud/edirect
+export PATH=${PATH}:~/edirect
 
 #export DOCKER_HOST=tcp://localhost:2375 # Commented out as per https://stackoverflow.com/questions/64710480/docker-client-under-wsl2-doesnt-work-without-sudo
 DOCKER_DISTRO="Ubuntu"
