@@ -27,7 +27,6 @@ alias gir='grep -ir'
 # fast navigation
 alias cdh='cd /mnt/c/Users/judson.x.belmont'
 alias cdc='cd /mnt/c/Users/judson.x.belmont/Documents/Code'
-alias cdiq='cd /mnt/c/Users/judson.x.belmont/Documents/Code/iqdb'
 alias home='cd ~'
 alias root='cd /'
 alias dtop='cd ~/Desktop'
@@ -58,13 +57,18 @@ alias wslkit='wsl.exe -d wsl-vpnkit service wsl-vpnkit start'
 alias nowslkit='wsl.exe -d wsl-vpnkit service wsl-vpnkit stop'
 
 # Other general docker stuff
+alias di='docker image'
 alias dils='docker image ls'
 alias dilsa='docker image ls -a'
+alias dc='docker container'
 alias dcls='docker container ls'
 alias dclsa='docker container ls -a'
+alias dcon='docker container start'
+alias dcoff='docker container start'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
-alias dcs='docker container start'
+alias dv='docker volume'
+alias de='docker exec'
 alias testdig='rsync -avn . /dev/shm --exclude-from .dockerignore' # neat trick from https://stackoverflow.com/questions/38946683/how-to-test-dockerignore-file
 
 # Text wrangling aliases 
@@ -82,3 +86,10 @@ alias getclip="xclip -selection c -o"
 
 # Start Timidity
 alias tmd='timidity -iA -Os'
+
+# AWS
+alias awsume='. awsume'
+
+# Conda
+alias condaoff='conda deactivate'
+alias condaon='conda activate'
