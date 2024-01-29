@@ -64,11 +64,12 @@ alias dc='docker container'
 alias dcls='docker container ls'
 alias dclsa='docker container ls -a'
 alias dcon='docker container start'
-alias dcoff='docker container start'
+alias dcoff='docker container stop'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 alias dv='docker volume'
 alias de='docker exec'
+alias dl='docker logs'
 alias testdig='rsync -avn . /dev/shm --exclude-from .dockerignore' # neat trick from https://stackoverflow.com/questions/38946683/how-to-test-dockerignore-file
 
 # Text wrangling aliases 
