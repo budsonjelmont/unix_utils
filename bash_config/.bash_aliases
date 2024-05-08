@@ -49,6 +49,8 @@ alias gl='git log'
 alias gpl='git log --graph --full-history --all --color \
         --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gc='export COMMIT=`git rev-parse HEAD`'
+alias gfo='git fetch origin'
+alias gsw='git switch'
 
 # For working in WSL2 while on VPN
 alias vpn='sudo cp /etc/resolvVPN.conf /etc/resolv.conf --remove-destination && echo "On VPN!" '
