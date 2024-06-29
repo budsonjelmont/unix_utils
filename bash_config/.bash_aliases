@@ -58,15 +58,19 @@ alias novpn='sudo cp /etc/resolvNoVPN.conf /etc/resolv.conf --remove-destination
 alias wslkit='wsl.exe -d wsl-vpnkit service wsl-vpnkit start'
 alias nowslkit='wsl.exe -d wsl-vpnkit service wsl-vpnkit stop'
 
-# Other general docker stuff
+# Docker stuff
 alias di='docker image'
 alias dils='docker image ls'
 alias dilsa='docker image ls -a'
+alias dirm='docker image rm'
 alias dc='docker container'
+alias dcrm='docker container rm'
 alias dcls='docker container ls'
 alias dclsa='docker container ls -a'
 alias dcon='docker container start'
 alias dcoff='docker container stop'
+alias dcrm='docker container rm'
+alias dr='docker run'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 alias dv='docker volume'
@@ -96,3 +100,7 @@ alias awsume='. awsume'
 # Conda
 alias condaoff='conda deactivate'
 alias condaon='conda activate'
+
+# Nextflow
+alias nf='nextflow'
+alias nfr='nextflow run'
