@@ -64,7 +64,6 @@ alias dils='docker image ls'
 alias dilsa='docker image ls -a'
 alias dirm='docker image rm'
 alias dc='docker container'
-alias dcrm='docker container rm'
 alias dcls='docker container ls'
 alias dclsa='docker container ls -a'
 alias dcon='docker container start'
@@ -76,6 +75,8 @@ alias dpsa='docker ps -a'
 alias dv='docker volume'
 alias de='docker exec'
 alias dl='docker logs'
+alias dcup='docker compose up --build -d'
+alias dcdown='docker compose rm -fs'
 alias testdig='rsync -avn . /dev/shm --exclude-from .dockerignore' # neat trick from https://stackoverflow.com/questions/38946683/how-to-test-dockerignore-file
 
 # Text wrangling aliases 
