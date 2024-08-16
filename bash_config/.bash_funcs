@@ -3,3 +3,8 @@ md(){
  mkdir -p $1
  cd $1
 }
+
+# Remove all containers created from image
+dcrmbyimg(){
+    docker rm $(docker ps -a -q --filter ancestor=$1)
+}
