@@ -77,6 +77,7 @@ alias de='docker exec'
 alias dl='docker logs'
 alias dcup='docker compose up --build -d'
 alias dcdown='docker compose rm -fs'
+alias dcdownup='docker compose rm -fs && docker compose up --build -d'
 alias testdig='rsync -avn . /dev/shm --exclude-from .dockerignore' # neat trick from https://stackoverflow.com/questions/38946683/how-to-test-dockerignore-file
 
 # Text wrangling aliases 
