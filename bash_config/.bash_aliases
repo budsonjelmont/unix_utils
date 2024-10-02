@@ -26,7 +26,6 @@ alias gir='grep -ir'
 
 # fast navigation
 alias cdh='cd /mnt/c/Users/judson.x.belmont'
-alias cdc='cd /mnt/c/Users/judson.x.belmont/Documents/Code'
 alias home='cd ~'
 alias root='cd /'
 alias dtop='cd ~/Desktop'
