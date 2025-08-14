@@ -8,3 +8,13 @@ md(){
 dcrmbyimg(){
     docker rm $(docker ps -a -q --filter ancestor=$1)
 }
+
+# Export all variables defined in a file
+export_env_vars() {
+  while IFS= read -r line; do
+    # Skip empty lines and lines starting with '#'
+    if [[ -n "$line" && ! "$line" =~ ^# ]]; then
+      export "$line"
+    fi
+  done < "${1:-.env}" # default to .env if no arg provided
+}
